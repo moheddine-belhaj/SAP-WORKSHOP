@@ -3,7 +3,7 @@ using { cuid } from '@sap/cds/common';
 
 @assert.unique: { docsID: [docsID] }
 entity Docs : cuid {
-  docsID: String(36);
+  docsID: String(36);  // Auto-generated in service handler if not provided
   internalUserId: String(255);
   fileName: String(500);
   filePath: String(1000);
