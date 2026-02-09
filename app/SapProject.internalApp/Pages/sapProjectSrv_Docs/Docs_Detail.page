@@ -1,0 +1,84 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/internalApp/Services/sapProjectSrv.service",
+		"EntitySet": "Docs",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [],
+		"Caption": "$(L,Docs_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{fileName}",
+						"Subhead": "{docsID}",
+						"BodyText": "",
+						"Footnote": "{filePath}",
+						"Description": "{internalUserId}",
+						"StatusText": "{fileHash}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{uploadedAt}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "docsID",
+							"Value": "{docsID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "internalUserId",
+							"Value": "{internalUserId}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "fileName",
+							"Value": "{fileName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "filePath",
+							"Value": "{filePath}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "fileHash",
+							"Value": "{fileHash}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "uploadedAt",
+							"Value": "{uploadedAt}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "isDeleted",
+							"Value": "{isDeleted}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Docs_Detail"
+}

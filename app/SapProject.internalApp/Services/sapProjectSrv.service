@@ -1,0 +1,10 @@
+{
+    "DestinationName": "../service/sapProject/",
+    "OfflineEnabled": false,
+    "LanguageURLParam": "",
+    "OnlineOptions": {},
+    "OfflineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "Cloud",
+    "ServiceUrl":""
+}
