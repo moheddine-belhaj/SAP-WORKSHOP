@@ -1,0 +1,4 @@
+ID,docsID,internalUserId,fileName,filePath,fileHash,uploadedAt,isDeleted
+3f7b2a4c-5e6d-4f8a-9b1c-2d3e4f5a6b7c,550e8400-e29b-41d4-a716-446655440001,user001,sample-document.pdf,/docs/samples/sample-document.pdf,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,2026-01-15T10:30:00.000Z,false
+4a8c3b5d-6f7e-5g9b-0c2d-3e4f5a6b7c8d,550e8400-e29b-41d4-a716-446655440002,user002,report-2026.xlsx,/docs/reports/report-2026.xlsx,a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a,2026-01-20T14:45:00.000Z,false
+5b9d4c6e-7g8f-6h0c-1d3e-4f5a6b7c8d9e,550e8400-e29b-41d4-a716-446655440003,user001,meeting-notes.docx,/docs/notes/meeting-notes.docx,127a9d7c5f8b6e4a3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b,2026-02-05T09:15:00.000Z,false

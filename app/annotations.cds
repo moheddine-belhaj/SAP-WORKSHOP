@@ -12,7 +12,9 @@ annotate sapProjectSrv.Docs with {
   filePath @title: 'File Path';
   fileHash @title: 'File Hash';
   uploadedAt @title: 'Uploaded At';
-  isDeleted @title: 'Is Deleted'
+  isDeleted @title: 'Is Deleted';
+  mediaType @title: 'Media Type';
+  fileSize @title: 'File Size'
 };
 
 annotate sapProjectSrv.Docs with @UI.LineItem: [
@@ -22,7 +24,9 @@ annotate sapProjectSrv.Docs with @UI.LineItem: [
  { $Type: 'UI.DataField', Value: filePath },
  { $Type: 'UI.DataField', Value: fileHash },
  { $Type: 'UI.DataField', Value: uploadedAt },
- { $Type: 'UI.DataField', Value: isDeleted }
+ { $Type: 'UI.DataField', Value: isDeleted },
+ { $Type: 'UI.DataField', Value: mediaType },
+ { $Type: 'UI.DataField', Value: fileSize }
 ];
 
 annotate sapProjectSrv.Docs with @UI.FieldGroup #Main: {
@@ -33,7 +37,9 @@ annotate sapProjectSrv.Docs with @UI.FieldGroup #Main: {
  { $Type: 'UI.DataField', Value: filePath },
  { $Type: 'UI.DataField', Value: fileHash },
  { $Type: 'UI.DataField', Value: uploadedAt },
- { $Type: 'UI.DataField', Value: isDeleted }
+ { $Type: 'UI.DataField', Value: isDeleted },
+ { $Type: 'UI.DataField', Value: mediaType },
+ { $Type: 'UI.DataField', Value: fileSize }
   ]
 };
 

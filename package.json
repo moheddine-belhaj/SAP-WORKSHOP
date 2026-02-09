@@ -32,6 +32,15 @@
                 "db": "hana",
                 "auth": "xsuaa"
             },
+            "db": {
+                "[development]": {
+                    "kind": "sql",
+                    "impl": "@cap-js/sqlite",
+                    "credentials": {
+                        "url": "db.sqlite"
+                    }
+                }
+            },
             "auth": {
                 "[development]": {
                     "kind": "dummy"

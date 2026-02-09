@@ -10,6 +10,9 @@ entity Docs : cuid {
   fileHash: String(64);
   uploadedAt: Timestamp;
   isDeleted: Boolean;
+  content: LargeBinary @Core.MediaType: mediaType;
+  mediaType: String(100) @Core.IsMediaType;
+  fileSize: Integer;
 }
 
 entity Links : cuid {
