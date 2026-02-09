@@ -1,7 +1,7 @@
 {
 	"_Name": "internalApp",
 	"Version": "/internalApp/Globals/Application/AppDefinition_Version.global",
-	"MainPage": "/internalApp/Pages/sapProjectSrv_Docs/Docs_List.page",
+	"MainPage": "/internalApp/Pages/Main.page",
 	"OnLaunch": "/internalApp/Rules/Service/Initialize.js",
 	"OnWillUpdate": "/internalApp/Rules/Application/OnWillUpdate.js",
 	"OnDidUpdate": "/internalApp/Rules/Service/Initialize.js",

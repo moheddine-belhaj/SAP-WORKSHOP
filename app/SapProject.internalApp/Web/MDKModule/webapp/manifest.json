@@ -13,7 +13,7 @@
 		"ach": "ach",
 		"sourceTemplate": {
 			"id": "@ext-mdkvsc-npm-dev/generator-mdk",
-			"name": "List Detail",
+			"name": "CRUD",
 			"version": "0.0.1"
 		},
 		"crossNavigation": {

@@ -2,13 +2,13 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Create.action",
+				"OnPress": "/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Create.action",
 				"Position": "Right",
 				"SystemItem": "Add",
 				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"Caption": "$(L,Docs)",
+		"Caption": "$(L,Links)",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [
@@ -21,7 +21,7 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "DisclosureIndicator",
-						"Description": "{internalUserId}",
+						"Description": "{recipient_email}",
 						"AvatarStack": {
 							"Avatars": [
 								{
@@ -31,14 +31,14 @@
 							"ImageIsCircular": false
 						},
 						"Icons": [],
-						"OnPress": "/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Detail.action",
+						"OnPress": "/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Detail.action",
 						"StatusImage": "",
-						"Title": "{fileName}",
-						"Footnote": "{filePath}",
+						"Title": "{ID}",
+						"Footnote": "{created_at}",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{fileHash}",
-						"Subhead": "{docsID}",
-						"SubstatusText": "{uploadedAt}",
+						"StatusText": "{expires_at}",
+						"Subhead": "{token}",
+						"SubstatusText": "{status}",
 						"_Type": "ObjectTable.Type.ObjectCell"
 					},
 					"EmptySection": {
@@ -56,7 +56,7 @@
 						"LoadingIndicatorText": "Loading more items, please wait..."
 					},
 					"Target": {
-						"EntitySet": "Docs",
+						"EntitySet": "Links",
 						"Service": "/internalApp/Services/sapProjectSrv.service",
 						"QueryOptions": ""
 					},
@@ -72,5 +72,5 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Docs_List"
+	"_Name": "Links_List"
 }

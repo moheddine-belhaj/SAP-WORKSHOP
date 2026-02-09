@@ -2,13 +2,13 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Create.action",
+				"OnPress": "/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Create.action",
 				"Position": "Right",
 				"SystemItem": "Add",
 				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"Caption": "$(L,Docs)",
+		"Caption": "$(L,Upload)",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [
@@ -31,7 +31,7 @@
 							"ImageIsCircular": false
 						},
 						"Icons": [],
-						"OnPress": "/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Detail.action",
+						"OnPress": "/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Detail.action",
 						"StatusImage": "",
 						"Title": "{fileName}",
 						"Footnote": "{filePath}",
@@ -56,7 +56,7 @@
 						"LoadingIndicatorText": "Loading more items, please wait..."
 					},
 					"Target": {
-						"EntitySet": "Docs",
+						"EntitySet": "Upload",
 						"Service": "/internalApp/Services/sapProjectSrv.service",
 						"QueryOptions": ""
 					},
@@ -72,5 +72,5 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Docs_List"
+	"_Name": "Upload_List"
 }

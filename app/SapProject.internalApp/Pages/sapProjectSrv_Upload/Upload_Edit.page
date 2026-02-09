@@ -1,0 +1,85 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/internalApp/Services/sapProjectSrv.service",
+		"EntitySet": "Upload",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"Caption": "Cancel",
+				"OnPress": "/internalApp/Rules/sapProjectSrv/Upload/Upload_Cancel.js",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/internalApp/Rules/sapProjectSrv/Upload/Upload_UpdateEntity.js",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_Upload_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "docsID",
+							"_Name": "docsID",
+							"Value": "{docsID}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "internalUserId",
+							"_Name": "internalUserId",
+							"Value": "{internalUserId}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "fileName",
+							"_Name": "fileName",
+							"Value": "{fileName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "filePath",
+							"_Name": "filePath",
+							"Value": "{filePath}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "fileHash",
+							"_Name": "fileHash",
+							"Value": "{fileHash}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "uploadedAt",
+							"Value": "{uploadedAt}",
+							"Caption": "uploadedAt",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"_Name": "isDeleted",
+							"Caption": "isDeleted",
+							"Value": "{isDeleted}",
+							"_Type": "Control.Type.FormCell.Switch"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Upload_Edit"
+}

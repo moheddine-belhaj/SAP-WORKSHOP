@@ -2,7 +2,7 @@
     "Credential": "cf",
     "Template": {
         "Id": "@ext-mdkvsc-npm-dev/generator-mdk",
-        "Name": "List Detail",
+        "Name": "CRUD",
         "Version": "0.0.1"
     },
     "CF": {

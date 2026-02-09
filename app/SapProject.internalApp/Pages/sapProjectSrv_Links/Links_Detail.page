@@ -1,25 +1,25 @@
 {
 	"DesignTimeTarget": {
 		"Service": "/internalApp/Services/sapProjectSrv.service",
-		"EntitySet": "Docs",
+		"EntitySet": "Links",
 		"QueryOptions": ""
 	},
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/internalApp/Rules/sapProjectSrv/Docs/NavToDocs_Edit.js",
+				"OnPress": "/internalApp/Rules/sapProjectSrv/Links/NavToLinks_Edit.js",
 				"Position": "Right",
 				"SystemItem": "Edit",
 				"_Type": "Control.Type.ActionBarItem"
 			},
 			{
-				"OnPress": "/internalApp/Rules/sapProjectSrv/Docs/Docs_DeleteConfirmation.js",
+				"OnPress": "/internalApp/Rules/sapProjectSrv/Links/Links_DeleteConfirmation.js",
 				"Position": "Right",
 				"SystemItem": "Trash",
 				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"Caption": "$(L,Docs_Detail)",
+		"Caption": "$(L,Links_Detail)",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [
@@ -29,53 +29,63 @@
 					"ObjectHeader": {
 						"Tags": [],
 						"DetailImage": "",
-						"HeadlineText": "{fileName}",
-						"Subhead": "{docsID}",
+						"HeadlineText": "{ID}",
+						"Subhead": "{token}",
 						"BodyText": "",
-						"Footnote": "{filePath}",
-						"Description": "{internalUserId}",
-						"StatusText": "{fileHash}",
+						"Footnote": "{created_at}",
+						"Description": "{recipient_email}",
+						"StatusText": "{expires_at}",
 						"StatusImage": "",
 						"SubstatusImage": "",
-						"SubstatusText": "{uploadedAt}"
+						"SubstatusText": "{status}"
 					},
 					"_Type": "Section.Type.ObjectHeader"
 				},
 				{
 					"KeyAndValues": [
 						{
-							"KeyName": "docsID",
-							"Value": "{docsID}",
+							"KeyName": "token",
+							"Value": "{token}",
 							"_Type": "KeyValue.Type.Item"
 						},
 						{
-							"KeyName": "internalUserId",
-							"Value": "{internalUserId}",
+							"KeyName": "recipient_email",
+							"Value": "{recipient_email}",
 							"_Type": "KeyValue.Type.Item"
 						},
 						{
-							"KeyName": "fileName",
-							"Value": "{fileName}",
+							"KeyName": "created_at",
+							"Value": "{created_at}",
 							"_Type": "KeyValue.Type.Item"
 						},
 						{
-							"KeyName": "filePath",
-							"Value": "{filePath}",
+							"KeyName": "expires_at",
+							"Value": "{expires_at}",
 							"_Type": "KeyValue.Type.Item"
 						},
 						{
-							"KeyName": "fileHash",
-							"Value": "{fileHash}",
+							"KeyName": "status",
+							"Value": "{status}",
 							"_Type": "KeyValue.Type.Item"
 						},
 						{
-							"KeyName": "uploadedAt",
-							"Value": "{uploadedAt}",
+							"KeyName": "access_count",
+							"Value": "{access_count}",
 							"_Type": "KeyValue.Type.Item"
 						},
 						{
-							"KeyName": "isDeleted",
-							"Value": "{isDeleted}",
+							"KeyName": "max_access",
+							"Value": "{max_access}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "password_hash",
+							"Value": "{password_hash}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "metadata",
+							"Value": "{metadata}",
 							"_Type": "KeyValue.Type.Item"
 						}
 					],
@@ -93,5 +103,5 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Docs_Detail"
+	"_Name": "Links_Detail"
 }

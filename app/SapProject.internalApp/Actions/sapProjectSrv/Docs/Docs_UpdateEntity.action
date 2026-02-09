@@ -1,0 +1,23 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Docs",
+        "Service": "/internalApp/Services/sapProjectSrv.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "docsID": "#Page:Docs_Edit/#Control:docsID/#Value",
+        "internalUserId": "#Page:Docs_Edit/#Control:internalUserId/#Value",
+        "fileName": "#Page:Docs_Edit/#Control:fileName/#Value",
+        "filePath": "#Page:Docs_Edit/#Control:filePath/#Value",
+        "fileHash": "#Page:Docs_Edit/#Control:fileHash/#Value",
+        "uploadedAt": "#Page:Docs_Edit/#Control:uploadedAt/#Value",
+        "isDeleted": "#Page:Docs_Edit/#Control:isDeleted/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/internalApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/internalApp/Actions/UpdateEntityFailureMessage.action"
+}

@@ -23,6 +23,8 @@
                 <EntitySet Name="Docs" EntityType="sapProjectSrv.Docs">
                     <NavigationPropertyBinding Path="SiblingEntity" Target="Docs"/>
                 </EntitySet>
+                <EntitySet Name="Links" EntityType="sapProjectSrv.Links"/>
+                <EntitySet Name="Upload" EntityType="sapProjectSrv.Upload"/>
             </EntityContainer>
             <EntityType Name="Docs">
                 <Key>
@@ -43,6 +45,37 @@
                 <NavigationProperty Name="DraftAdministrativeData" Type="sapProjectSrv.DraftAdministrativeData" ContainsTarget="true"/>
                 <NavigationProperty Name="SiblingEntity" Type="sapProjectSrv.Docs"/>
                 <Property Name="DraftMessages" Type="Collection(sapProjectSrv.DRAFT_DraftAdministrativeData_DraftMessage)" Nullable="true"/>
+            </EntityType>
+            <EntityType Name="Links">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="link_id" Type="Edm.Guid"/>
+                <Property Name="document_id" Type="Edm.Guid"/>
+                <Property Name="token" Type="Edm.String" MaxLength="128"/>
+                <Property Name="recipient_email" Type="Edm.String" MaxLength="255"/>
+                <Property Name="created_at" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="expires_at" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="status" Type="Edm.String" MaxLength="20"/>
+                <Property Name="access_count" Type="Edm.Int32"/>
+                <Property Name="max_access" Type="Edm.Int32"/>
+                <Property Name="ip_whitelist" Type="Collection(Edm.String)" Nullable="true"/>
+                <Property Name="password_hash" Type="Edm.String" MaxLength="255"/>
+                <Property Name="metadata" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="Upload">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="docsID" Type="Edm.String" MaxLength="36"/>
+                <Property Name="internalUserId" Type="Edm.String" MaxLength="255"/>
+                <Property Name="fileName" Type="Edm.String" MaxLength="500"/>
+                <Property Name="filePath" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="fileHash" Type="Edm.String" MaxLength="64"/>
+                <Property Name="uploadedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="isDeleted" Type="Edm.Boolean"/>
             </EntityType>
             <EntityType Name="DraftAdministrativeData">
                 <Key>
@@ -149,6 +182,15 @@
             </Annotations>
             <Annotations Target="sapProjectSrv.Docs/DraftMessages">
                 <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="sapProjectSrv.Links/ID">
+                <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="sapProjectSrv.Upload/ID">
+                <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="sapProjectSrv.Upload/docsID">
+                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Mandatory"/>
             </Annotations>
             <Annotations Target="sapProjectSrv.DraftAdministrativeData">
                 <Annotation Term="Common.Label" String="{i18n>

@@ -1,0 +1,23 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Upload",
+        "Service": "/internalApp/Services/sapProjectSrv.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "docsID": "#Page:Upload_Edit/#Control:docsID/#Value",
+        "internalUserId": "#Page:Upload_Edit/#Control:internalUserId/#Value",
+        "fileName": "#Page:Upload_Edit/#Control:fileName/#Value",
+        "filePath": "#Page:Upload_Edit/#Control:filePath/#Value",
+        "fileHash": "#Page:Upload_Edit/#Control:fileHash/#Value",
+        "uploadedAt": "#Page:Upload_Edit/#Control:uploadedAt/#Value",
+        "isDeleted": "#Page:Upload_Edit/#Control:isDeleted/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/internalApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/internalApp/Actions/UpdateEntityFailureMessage.action"
+}

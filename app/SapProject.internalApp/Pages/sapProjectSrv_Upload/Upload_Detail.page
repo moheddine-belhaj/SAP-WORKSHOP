@@ -1,25 +1,25 @@
 {
 	"DesignTimeTarget": {
 		"Service": "/internalApp/Services/sapProjectSrv.service",
-		"EntitySet": "Docs",
+		"EntitySet": "Upload",
 		"QueryOptions": ""
 	},
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/internalApp/Rules/sapProjectSrv/Docs/NavToDocs_Edit.js",
+				"OnPress": "/internalApp/Rules/sapProjectSrv/Upload/NavToUpload_Edit.js",
 				"Position": "Right",
 				"SystemItem": "Edit",
 				"_Type": "Control.Type.ActionBarItem"
 			},
 			{
-				"OnPress": "/internalApp/Rules/sapProjectSrv/Docs/Docs_DeleteConfirmation.js",
+				"OnPress": "/internalApp/Rules/sapProjectSrv/Upload/Upload_DeleteConfirmation.js",
 				"Position": "Right",
 				"SystemItem": "Trash",
 				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"Caption": "$(L,Docs_Detail)",
+		"Caption": "$(L,Upload_Detail)",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [
@@ -93,5 +93,5 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Docs_Detail"
+	"_Name": "Upload_Detail"
 }

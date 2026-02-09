@@ -1,0 +1,24 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/internalApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/internalApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "token": "#Page:Links_Create/#Control:token/#Value",
+        "recipient_email": "#Page:Links_Create/#Control:recipient_email/#Value",
+        "created_at": "#Page:Links_Create/#Control:created_at/#Value",
+        "expires_at": "#Page:Links_Create/#Control:expires_at/#Value",
+        "status": "#Page:Links_Create/#Control:status/#Value",
+        "access_count": "#Page:Links_Create/#Control:access_count/#Value",
+        "max_access": "#Page:Links_Create/#Control:max_access/#Value",
+        "password_hash": "#Page:Links_Create/#Control:password_hash/#Value",
+        "metadata": "#Page:Links_Create/#Control:metadata/#Value"
+    },
+    "Target": {
+        "EntitySet": "Links",
+        "Service": "/internalApp/Services/sapProjectSrv.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

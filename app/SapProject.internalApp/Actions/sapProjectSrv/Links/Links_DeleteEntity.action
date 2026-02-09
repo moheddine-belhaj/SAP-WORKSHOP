@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Links",
+        "Service": "/internalApp/Services/sapProjectSrv.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/internalApp/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/internalApp/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

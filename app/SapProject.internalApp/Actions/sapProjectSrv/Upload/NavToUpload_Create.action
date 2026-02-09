@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/internalApp/Pages/sapProjectSrv_Upload/Upload_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

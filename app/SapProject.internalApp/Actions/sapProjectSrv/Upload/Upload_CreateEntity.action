@@ -1,0 +1,22 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/internalApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/internalApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "docsID": "#Page:Upload_Create/#Control:docsID/#Value",
+        "internalUserId": "#Page:Upload_Create/#Control:internalUserId/#Value",
+        "fileName": "#Page:Upload_Create/#Control:fileName/#Value",
+        "filePath": "#Page:Upload_Create/#Control:filePath/#Value",
+        "fileHash": "#Page:Upload_Create/#Control:fileHash/#Value",
+        "uploadedAt": "#Page:Upload_Create/#Control:uploadedAt/#Value",
+        "isDeleted": "#Page:Upload_Create/#Control:isDeleted/#Value"
+    },
+    "Target": {
+        "EntitySet": "Upload",
+        "Service": "/internalApp/Services/sapProjectSrv.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

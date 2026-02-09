@@ -1,0 +1,78 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader_sapProjectSrv",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "sapProjectSrv",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"OnPress": "/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_List.action",
+							"Alignment": "Center",
+							"Title": "Docs",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/internalApp/Actions/sapProjectSrv/Links/NavToLinks_List.action",
+							"Alignment": "Center",
+							"Title": "Links",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_List.action",
+							"Alignment": "Center",
+							"Title": "Upload",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						}
+					],
+					"_Name": "SectionButtonTable_sapProjectSrv",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			]
+		}
+	],
+	"_Name": "Main",
+	"_Type": "Page",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/internalApp/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
+	}
+}

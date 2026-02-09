@@ -1,0 +1,25 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Links",
+        "Service": "/internalApp/Services/sapProjectSrv.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "token": "#Page:Links_Edit/#Control:token/#Value",
+        "recipient_email": "#Page:Links_Edit/#Control:recipient_email/#Value",
+        "created_at": "#Page:Links_Edit/#Control:created_at/#Value",
+        "expires_at": "#Page:Links_Edit/#Control:expires_at/#Value",
+        "status": "#Page:Links_Edit/#Control:status/#Value",
+        "access_count": "#Page:Links_Edit/#Control:access_count/#Value",
+        "max_access": "#Page:Links_Edit/#Control:max_access/#Value",
+        "password_hash": "#Page:Links_Edit/#Control:password_hash/#Value",
+        "metadata": "#Page:Links_Edit/#Control:metadata/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/internalApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/internalApp/Actions/UpdateEntityFailureMessage.action"
+}

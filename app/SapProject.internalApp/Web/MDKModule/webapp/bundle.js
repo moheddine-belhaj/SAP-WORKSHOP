@@ -17,7 +17,7 @@ return /******/ (() => { // webpackBootstrap
   \************************************************************/
 /***/ ((module) => {
 
-module.exports = "Draft_DraftAdministrativeData=Draft_DraftAdministrativeData\nDraft_DraftUUID=Draft_DraftUUID\nDraft_CreationDateTime=Draft_CreationDateTime\nDraft_CreatedByUser=Draft_CreatedByUser\nDraft_DraftIsCreatedByMe=Draft_DraftIsCreatedByMe\nDraft_LastChangeDateTime=Draft_LastChangeDateTime\nDraft_LastChangedByUser=Draft_LastChangedByUser\nDraft_InProcessByUser=Draft_InProcessByUser\nDraft_DraftIsProcessedByMe=Draft_DraftIsProcessedByMe\nDocs=Docs\nDocs_Detail=Docs Detail"
+module.exports = "Draft_DraftAdministrativeData=Draft_DraftAdministrativeData\nDraft_DraftUUID=Draft_DraftUUID\nDraft_CreationDateTime=Draft_CreationDateTime\nDraft_CreatedByUser=Draft_CreatedByUser\nDraft_DraftIsCreatedByMe=Draft_DraftIsCreatedByMe\nDraft_LastChangeDateTime=Draft_LastChangeDateTime\nDraft_LastChangedByUser=Draft_LastChangedByUser\nDraft_InProcessByUser=Draft_InProcessByUser\nDraft_DraftIsProcessedByMe=Draft_DraftIsProcessedByMe\nDocs=Docs\nDocs_Detail=Docs Detail\nCreate_Docs_Detail=Create Docs Detail\nUpdate_Docs_Detail=Update Docs Detail\nLinks=Links\nLinks_Detail=Links Detail\nCreate_Links_Detail=Create Links Detail\nUpdate_Links_Detail=Update Links Detail\nUpload=Upload\nUpload_Detail=Upload Detail\nCreate_Upload_Detail=Create Upload Detail\nUpdate_Upload_Detail=Update Upload Detail"
 
 /***/ }),
 
@@ -43,6 +43,14 @@ let internalapp_actions_application_usermenupopover_action = __webpack_require__
 let internalapp_actions_closemodalpage_cancel_action = __webpack_require__(/*! ./internalApp/Actions/CloseModalPage_Cancel.action */ "./build.definitions/internalApp/Actions/CloseModalPage_Cancel.action")
 let internalapp_actions_closemodalpage_complete_action = __webpack_require__(/*! ./internalApp/Actions/CloseModalPage_Complete.action */ "./build.definitions/internalApp/Actions/CloseModalPage_Complete.action")
 let internalapp_actions_closepage_action = __webpack_require__(/*! ./internalApp/Actions/ClosePage.action */ "./build.definitions/internalApp/Actions/ClosePage.action")
+let internalapp_actions_createentityfailuremessage_action = __webpack_require__(/*! ./internalApp/Actions/CreateEntityFailureMessage.action */ "./build.definitions/internalApp/Actions/CreateEntityFailureMessage.action")
+let internalapp_actions_createentitysuccessmessage_action = __webpack_require__(/*! ./internalApp/Actions/CreateEntitySuccessMessage.action */ "./build.definitions/internalApp/Actions/CreateEntitySuccessMessage.action")
+let internalapp_actions_deleteconfirmation_action = __webpack_require__(/*! ./internalApp/Actions/DeleteConfirmation.action */ "./build.definitions/internalApp/Actions/DeleteConfirmation.action")
+let internalapp_actions_deleteentityfailuremessage_action = __webpack_require__(/*! ./internalApp/Actions/DeleteEntityFailureMessage.action */ "./build.definitions/internalApp/Actions/DeleteEntityFailureMessage.action")
+let internalapp_actions_deleteentitysuccessmessage_action = __webpack_require__(/*! ./internalApp/Actions/DeleteEntitySuccessMessage.action */ "./build.definitions/internalApp/Actions/DeleteEntitySuccessMessage.action")
+let internalapp_actions_draftdiscardentity_action = __webpack_require__(/*! ./internalApp/Actions/DraftDiscardEntity.action */ "./build.definitions/internalApp/Actions/DraftDiscardEntity.action")
+let internalapp_actions_drafteditentity_action = __webpack_require__(/*! ./internalApp/Actions/DraftEditEntity.action */ "./build.definitions/internalApp/Actions/DraftEditEntity.action")
+let internalapp_actions_draftsaveentity_action = __webpack_require__(/*! ./internalApp/Actions/DraftSaveEntity.action */ "./build.definitions/internalApp/Actions/DraftSaveEntity.action")
 let internalapp_actions_genericbannermessage_action = __webpack_require__(/*! ./internalApp/Actions/GenericBannerMessage.action */ "./build.definitions/internalApp/Actions/GenericBannerMessage.action")
 let internalapp_actions_genericmessagebox_action = __webpack_require__(/*! ./internalApp/Actions/GenericMessageBox.action */ "./build.definitions/internalApp/Actions/GenericMessageBox.action")
 let internalapp_actions_genericnavigation_action = __webpack_require__(/*! ./internalApp/Actions/GenericNavigation.action */ "./build.definitions/internalApp/Actions/GenericNavigation.action")
@@ -51,10 +59,31 @@ let internalapp_actions_logging_loguploadfailure_action = __webpack_require__(/*
 let internalapp_actions_logging_loguploadsuccessful_action = __webpack_require__(/*! ./internalApp/Actions/Logging/LogUploadSuccessful.action */ "./build.definitions/internalApp/Actions/Logging/LogUploadSuccessful.action")
 let internalapp_actions_logging_uploadlog_action = __webpack_require__(/*! ./internalApp/Actions/Logging/UploadLog.action */ "./build.definitions/internalApp/Actions/Logging/UploadLog.action")
 let internalapp_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./internalApp/Actions/Logging/UploadLogProgress.action */ "./build.definitions/internalApp/Actions/Logging/UploadLogProgress.action")
+let internalapp_actions_sapprojectsrv_docs_docs_createentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Docs/Docs_CreateEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_CreateEntity.action")
+let internalapp_actions_sapprojectsrv_docs_docs_deleteentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Docs/Docs_DeleteEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_DeleteEntity.action")
+let internalapp_actions_sapprojectsrv_docs_docs_updateentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Docs/Docs_UpdateEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_UpdateEntity.action")
+let internalapp_actions_sapprojectsrv_docs_navtodocs_create_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Create.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Create.action")
 let internalapp_actions_sapprojectsrv_docs_navtodocs_detail_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Detail.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Detail.action")
+let internalapp_actions_sapprojectsrv_docs_navtodocs_edit_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Edit.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Edit.action")
 let internalapp_actions_sapprojectsrv_docs_navtodocs_list_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Docs/NavToDocs_List.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_List.action")
+let internalapp_actions_sapprojectsrv_links_links_createentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Links/Links_CreateEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_CreateEntity.action")
+let internalapp_actions_sapprojectsrv_links_links_deleteentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Links/Links_DeleteEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_DeleteEntity.action")
+let internalapp_actions_sapprojectsrv_links_links_updateentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Links/Links_UpdateEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_UpdateEntity.action")
+let internalapp_actions_sapprojectsrv_links_navtolinks_create_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Links/NavToLinks_Create.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Create.action")
+let internalapp_actions_sapprojectsrv_links_navtolinks_detail_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Links/NavToLinks_Detail.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Detail.action")
+let internalapp_actions_sapprojectsrv_links_navtolinks_edit_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Links/NavToLinks_Edit.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Edit.action")
+let internalapp_actions_sapprojectsrv_links_navtolinks_list_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Links/NavToLinks_List.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_List.action")
 let internalapp_actions_sapprojectsrv_service_initializeonline_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Service/InitializeOnline.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Service/InitializeOnline.action")
 let internalapp_actions_sapprojectsrv_service_initializeonlinefailuremessage_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Service/InitializeOnlineFailureMessage.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Service/InitializeOnlineFailureMessage.action")
+let internalapp_actions_sapprojectsrv_upload_navtoupload_create_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Create.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Create.action")
+let internalapp_actions_sapprojectsrv_upload_navtoupload_detail_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Detail.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Detail.action")
+let internalapp_actions_sapprojectsrv_upload_navtoupload_edit_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Edit.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Edit.action")
+let internalapp_actions_sapprojectsrv_upload_navtoupload_list_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Upload/NavToUpload_List.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_List.action")
+let internalapp_actions_sapprojectsrv_upload_upload_createentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Upload/Upload_CreateEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_CreateEntity.action")
+let internalapp_actions_sapprojectsrv_upload_upload_deleteentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Upload/Upload_DeleteEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_DeleteEntity.action")
+let internalapp_actions_sapprojectsrv_upload_upload_updateentity_action = __webpack_require__(/*! ./internalApp/Actions/sapProjectSrv/Upload/Upload_UpdateEntity.action */ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_UpdateEntity.action")
+let internalapp_actions_updateentityfailuremessage_action = __webpack_require__(/*! ./internalApp/Actions/UpdateEntityFailureMessage.action */ "./build.definitions/internalApp/Actions/UpdateEntityFailureMessage.action")
+let internalapp_actions_updateentitysuccessmessage_action = __webpack_require__(/*! ./internalApp/Actions/UpdateEntitySuccessMessage.action */ "./build.definitions/internalApp/Actions/UpdateEntitySuccessMessage.action")
 let internalapp_globals_application_appdefinition_version_global = __webpack_require__(/*! ./internalApp/Globals/Application/AppDefinition_Version.global */ "./build.definitions/internalApp/Globals/Application/AppDefinition_Version.global")
 let internalapp_globals_application_applicationname_global = __webpack_require__(/*! ./internalApp/Globals/Application/ApplicationName.global */ "./build.definitions/internalApp/Globals/Application/ApplicationName.global")
 let internalapp_globals_application_supportemail_global = __webpack_require__(/*! ./internalApp/Globals/Application/SupportEmail.global */ "./build.definitions/internalApp/Globals/Application/SupportEmail.global")
@@ -64,8 +93,19 @@ let internalapp_jsconfig_json = __webpack_require__(/*! ./internalApp/jsconfig.j
 let internalapp_pages_application_about_page = __webpack_require__(/*! ./internalApp/Pages/Application/About.page */ "./build.definitions/internalApp/Pages/Application/About.page")
 let internalapp_pages_application_support_page = __webpack_require__(/*! ./internalApp/Pages/Application/Support.page */ "./build.definitions/internalApp/Pages/Application/Support.page")
 let internalapp_pages_application_useractivitylog_page = __webpack_require__(/*! ./internalApp/Pages/Application/UserActivityLog.page */ "./build.definitions/internalApp/Pages/Application/UserActivityLog.page")
+let internalapp_pages_main_page = __webpack_require__(/*! ./internalApp/Pages/Main.page */ "./build.definitions/internalApp/Pages/Main.page")
+let internalapp_pages_sapprojectsrv_docs_docs_create_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Docs/Docs_Create.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Create.page")
 let internalapp_pages_sapprojectsrv_docs_docs_detail_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Docs/Docs_Detail.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Detail.page")
+let internalapp_pages_sapprojectsrv_docs_docs_edit_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Docs/Docs_Edit.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Edit.page")
 let internalapp_pages_sapprojectsrv_docs_docs_list_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Docs/Docs_List.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_List.page")
+let internalapp_pages_sapprojectsrv_links_links_create_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Links/Links_Create.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Create.page")
+let internalapp_pages_sapprojectsrv_links_links_detail_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Links/Links_Detail.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Detail.page")
+let internalapp_pages_sapprojectsrv_links_links_edit_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Links/Links_Edit.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Edit.page")
+let internalapp_pages_sapprojectsrv_links_links_list_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Links/Links_List.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_List.page")
+let internalapp_pages_sapprojectsrv_upload_upload_create_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Upload/Upload_Create.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Create.page")
+let internalapp_pages_sapprojectsrv_upload_upload_detail_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Upload/Upload_Detail.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Detail.page")
+let internalapp_pages_sapprojectsrv_upload_upload_edit_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Upload/Upload_Edit.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Edit.page")
+let internalapp_pages_sapprojectsrv_upload_upload_list_page = __webpack_require__(/*! ./internalApp/Pages/sapProjectSrv_Upload/Upload_List.page */ "./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_List.page")
 let internalapp_rules_application_appupdatefailure_js = __webpack_require__(/*! ./internalApp/Rules/Application/AppUpdateFailure.js */ "./build.definitions/internalApp/Rules/Application/AppUpdateFailure.js")
 let internalapp_rules_application_appupdatesuccess_js = __webpack_require__(/*! ./internalApp/Rules/Application/AppUpdateSuccess.js */ "./build.definitions/internalApp/Rules/Application/AppUpdateSuccess.js")
 let internalapp_rules_application_clientismultiusermode_js = __webpack_require__(/*! ./internalApp/Rules/Application/ClientIsMultiUserMode.js */ "./build.definitions/internalApp/Rules/Application/ClientIsMultiUserMode.js")
@@ -79,6 +119,21 @@ let internalapp_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./int
 let internalapp_rules_logging_togglelogging_js = __webpack_require__(/*! ./internalApp/Rules/Logging/ToggleLogging.js */ "./build.definitions/internalApp/Rules/Logging/ToggleLogging.js")
 let internalapp_rules_logging_tracecategories_js = __webpack_require__(/*! ./internalApp/Rules/Logging/TraceCategories.js */ "./build.definitions/internalApp/Rules/Logging/TraceCategories.js")
 let internalapp_rules_logging_userlogsetting_js = __webpack_require__(/*! ./internalApp/Rules/Logging/UserLogSetting.js */ "./build.definitions/internalApp/Rules/Logging/UserLogSetting.js")
+let internalapp_rules_sapprojectsrv_docs_docs_cancel_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Docs/Docs_Cancel.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_Cancel.js")
+let internalapp_rules_sapprojectsrv_docs_docs_createentity_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Docs/Docs_CreateEntity.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_CreateEntity.js")
+let internalapp_rules_sapprojectsrv_docs_docs_deleteconfirmation_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Docs/Docs_DeleteConfirmation.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_DeleteConfirmation.js")
+let internalapp_rules_sapprojectsrv_docs_docs_updateentity_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Docs/Docs_UpdateEntity.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_UpdateEntity.js")
+let internalapp_rules_sapprojectsrv_docs_navtodocs_edit_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Docs/NavToDocs_Edit.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/NavToDocs_Edit.js")
+let internalapp_rules_sapprojectsrv_links_links_cancel_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Links/Links_Cancel.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_Cancel.js")
+let internalapp_rules_sapprojectsrv_links_links_createentity_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Links/Links_CreateEntity.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_CreateEntity.js")
+let internalapp_rules_sapprojectsrv_links_links_deleteconfirmation_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Links/Links_DeleteConfirmation.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_DeleteConfirmation.js")
+let internalapp_rules_sapprojectsrv_links_links_updateentity_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Links/Links_UpdateEntity.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_UpdateEntity.js")
+let internalapp_rules_sapprojectsrv_links_navtolinks_edit_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Links/NavToLinks_Edit.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/NavToLinks_Edit.js")
+let internalapp_rules_sapprojectsrv_upload_navtoupload_edit_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Upload/NavToUpload_Edit.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/NavToUpload_Edit.js")
+let internalapp_rules_sapprojectsrv_upload_upload_cancel_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Upload/Upload_Cancel.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_Cancel.js")
+let internalapp_rules_sapprojectsrv_upload_upload_createentity_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Upload/Upload_CreateEntity.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_CreateEntity.js")
+let internalapp_rules_sapprojectsrv_upload_upload_deleteconfirmation_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Upload/Upload_DeleteConfirmation.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_DeleteConfirmation.js")
+let internalapp_rules_sapprojectsrv_upload_upload_updateentity_js = __webpack_require__(/*! ./internalApp/Rules/sapProjectSrv/Upload/Upload_UpdateEntity.js */ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_UpdateEntity.js")
 let internalapp_rules_service_initialize_js = __webpack_require__(/*! ./internalApp/Rules/Service/Initialize.js */ "./build.definitions/internalApp/Rules/Service/Initialize.js")
 let internalapp_services_sapprojectsrv_service = __webpack_require__(/*! ./internalApp/Services/sapProjectSrv.service */ "./build.definitions/internalApp/Services/sapProjectSrv.service")
 let internalapp_styles_styles_css = __webpack_require__(/*! ./internalApp/Styles/Styles.css */ "./build.definitions/internalApp/Styles/Styles.css")
@@ -105,6 +160,14 @@ module.exports = {
 	internalapp_actions_closemodalpage_cancel_action : internalapp_actions_closemodalpage_cancel_action,
 	internalapp_actions_closemodalpage_complete_action : internalapp_actions_closemodalpage_complete_action,
 	internalapp_actions_closepage_action : internalapp_actions_closepage_action,
+	internalapp_actions_createentityfailuremessage_action : internalapp_actions_createentityfailuremessage_action,
+	internalapp_actions_createentitysuccessmessage_action : internalapp_actions_createentitysuccessmessage_action,
+	internalapp_actions_deleteconfirmation_action : internalapp_actions_deleteconfirmation_action,
+	internalapp_actions_deleteentityfailuremessage_action : internalapp_actions_deleteentityfailuremessage_action,
+	internalapp_actions_deleteentitysuccessmessage_action : internalapp_actions_deleteentitysuccessmessage_action,
+	internalapp_actions_draftdiscardentity_action : internalapp_actions_draftdiscardentity_action,
+	internalapp_actions_drafteditentity_action : internalapp_actions_drafteditentity_action,
+	internalapp_actions_draftsaveentity_action : internalapp_actions_draftsaveentity_action,
 	internalapp_actions_genericbannermessage_action : internalapp_actions_genericbannermessage_action,
 	internalapp_actions_genericmessagebox_action : internalapp_actions_genericmessagebox_action,
 	internalapp_actions_genericnavigation_action : internalapp_actions_genericnavigation_action,
@@ -113,10 +176,31 @@ module.exports = {
 	internalapp_actions_logging_loguploadsuccessful_action : internalapp_actions_logging_loguploadsuccessful_action,
 	internalapp_actions_logging_uploadlog_action : internalapp_actions_logging_uploadlog_action,
 	internalapp_actions_logging_uploadlogprogress_action : internalapp_actions_logging_uploadlogprogress_action,
+	internalapp_actions_sapprojectsrv_docs_docs_createentity_action : internalapp_actions_sapprojectsrv_docs_docs_createentity_action,
+	internalapp_actions_sapprojectsrv_docs_docs_deleteentity_action : internalapp_actions_sapprojectsrv_docs_docs_deleteentity_action,
+	internalapp_actions_sapprojectsrv_docs_docs_updateentity_action : internalapp_actions_sapprojectsrv_docs_docs_updateentity_action,
+	internalapp_actions_sapprojectsrv_docs_navtodocs_create_action : internalapp_actions_sapprojectsrv_docs_navtodocs_create_action,
 	internalapp_actions_sapprojectsrv_docs_navtodocs_detail_action : internalapp_actions_sapprojectsrv_docs_navtodocs_detail_action,
+	internalapp_actions_sapprojectsrv_docs_navtodocs_edit_action : internalapp_actions_sapprojectsrv_docs_navtodocs_edit_action,
 	internalapp_actions_sapprojectsrv_docs_navtodocs_list_action : internalapp_actions_sapprojectsrv_docs_navtodocs_list_action,
+	internalapp_actions_sapprojectsrv_links_links_createentity_action : internalapp_actions_sapprojectsrv_links_links_createentity_action,
+	internalapp_actions_sapprojectsrv_links_links_deleteentity_action : internalapp_actions_sapprojectsrv_links_links_deleteentity_action,
+	internalapp_actions_sapprojectsrv_links_links_updateentity_action : internalapp_actions_sapprojectsrv_links_links_updateentity_action,
+	internalapp_actions_sapprojectsrv_links_navtolinks_create_action : internalapp_actions_sapprojectsrv_links_navtolinks_create_action,
+	internalapp_actions_sapprojectsrv_links_navtolinks_detail_action : internalapp_actions_sapprojectsrv_links_navtolinks_detail_action,
+	internalapp_actions_sapprojectsrv_links_navtolinks_edit_action : internalapp_actions_sapprojectsrv_links_navtolinks_edit_action,
+	internalapp_actions_sapprojectsrv_links_navtolinks_list_action : internalapp_actions_sapprojectsrv_links_navtolinks_list_action,
 	internalapp_actions_sapprojectsrv_service_initializeonline_action : internalapp_actions_sapprojectsrv_service_initializeonline_action,
 	internalapp_actions_sapprojectsrv_service_initializeonlinefailuremessage_action : internalapp_actions_sapprojectsrv_service_initializeonlinefailuremessage_action,
+	internalapp_actions_sapprojectsrv_upload_navtoupload_create_action : internalapp_actions_sapprojectsrv_upload_navtoupload_create_action,
+	internalapp_actions_sapprojectsrv_upload_navtoupload_detail_action : internalapp_actions_sapprojectsrv_upload_navtoupload_detail_action,
+	internalapp_actions_sapprojectsrv_upload_navtoupload_edit_action : internalapp_actions_sapprojectsrv_upload_navtoupload_edit_action,
+	internalapp_actions_sapprojectsrv_upload_navtoupload_list_action : internalapp_actions_sapprojectsrv_upload_navtoupload_list_action,
+	internalapp_actions_sapprojectsrv_upload_upload_createentity_action : internalapp_actions_sapprojectsrv_upload_upload_createentity_action,
+	internalapp_actions_sapprojectsrv_upload_upload_deleteentity_action : internalapp_actions_sapprojectsrv_upload_upload_deleteentity_action,
+	internalapp_actions_sapprojectsrv_upload_upload_updateentity_action : internalapp_actions_sapprojectsrv_upload_upload_updateentity_action,
+	internalapp_actions_updateentityfailuremessage_action : internalapp_actions_updateentityfailuremessage_action,
+	internalapp_actions_updateentitysuccessmessage_action : internalapp_actions_updateentitysuccessmessage_action,
 	internalapp_globals_application_appdefinition_version_global : internalapp_globals_application_appdefinition_version_global,
 	internalapp_globals_application_applicationname_global : internalapp_globals_application_applicationname_global,
 	internalapp_globals_application_supportemail_global : internalapp_globals_application_supportemail_global,
@@ -126,8 +210,19 @@ module.exports = {
 	internalapp_pages_application_about_page : internalapp_pages_application_about_page,
 	internalapp_pages_application_support_page : internalapp_pages_application_support_page,
 	internalapp_pages_application_useractivitylog_page : internalapp_pages_application_useractivitylog_page,
+	internalapp_pages_main_page : internalapp_pages_main_page,
+	internalapp_pages_sapprojectsrv_docs_docs_create_page : internalapp_pages_sapprojectsrv_docs_docs_create_page,
 	internalapp_pages_sapprojectsrv_docs_docs_detail_page : internalapp_pages_sapprojectsrv_docs_docs_detail_page,
+	internalapp_pages_sapprojectsrv_docs_docs_edit_page : internalapp_pages_sapprojectsrv_docs_docs_edit_page,
 	internalapp_pages_sapprojectsrv_docs_docs_list_page : internalapp_pages_sapprojectsrv_docs_docs_list_page,
+	internalapp_pages_sapprojectsrv_links_links_create_page : internalapp_pages_sapprojectsrv_links_links_create_page,
+	internalapp_pages_sapprojectsrv_links_links_detail_page : internalapp_pages_sapprojectsrv_links_links_detail_page,
+	internalapp_pages_sapprojectsrv_links_links_edit_page : internalapp_pages_sapprojectsrv_links_links_edit_page,
+	internalapp_pages_sapprojectsrv_links_links_list_page : internalapp_pages_sapprojectsrv_links_links_list_page,
+	internalapp_pages_sapprojectsrv_upload_upload_create_page : internalapp_pages_sapprojectsrv_upload_upload_create_page,
+	internalapp_pages_sapprojectsrv_upload_upload_detail_page : internalapp_pages_sapprojectsrv_upload_upload_detail_page,
+	internalapp_pages_sapprojectsrv_upload_upload_edit_page : internalapp_pages_sapprojectsrv_upload_upload_edit_page,
+	internalapp_pages_sapprojectsrv_upload_upload_list_page : internalapp_pages_sapprojectsrv_upload_upload_list_page,
 	internalapp_rules_application_appupdatefailure_js : internalapp_rules_application_appupdatefailure_js,
 	internalapp_rules_application_appupdatesuccess_js : internalapp_rules_application_appupdatesuccess_js,
 	internalapp_rules_application_clientismultiusermode_js : internalapp_rules_application_clientismultiusermode_js,
@@ -141,6 +236,21 @@ module.exports = {
 	internalapp_rules_logging_togglelogging_js : internalapp_rules_logging_togglelogging_js,
 	internalapp_rules_logging_tracecategories_js : internalapp_rules_logging_tracecategories_js,
 	internalapp_rules_logging_userlogsetting_js : internalapp_rules_logging_userlogsetting_js,
+	internalapp_rules_sapprojectsrv_docs_docs_cancel_js : internalapp_rules_sapprojectsrv_docs_docs_cancel_js,
+	internalapp_rules_sapprojectsrv_docs_docs_createentity_js : internalapp_rules_sapprojectsrv_docs_docs_createentity_js,
+	internalapp_rules_sapprojectsrv_docs_docs_deleteconfirmation_js : internalapp_rules_sapprojectsrv_docs_docs_deleteconfirmation_js,
+	internalapp_rules_sapprojectsrv_docs_docs_updateentity_js : internalapp_rules_sapprojectsrv_docs_docs_updateentity_js,
+	internalapp_rules_sapprojectsrv_docs_navtodocs_edit_js : internalapp_rules_sapprojectsrv_docs_navtodocs_edit_js,
+	internalapp_rules_sapprojectsrv_links_links_cancel_js : internalapp_rules_sapprojectsrv_links_links_cancel_js,
+	internalapp_rules_sapprojectsrv_links_links_createentity_js : internalapp_rules_sapprojectsrv_links_links_createentity_js,
+	internalapp_rules_sapprojectsrv_links_links_deleteconfirmation_js : internalapp_rules_sapprojectsrv_links_links_deleteconfirmation_js,
+	internalapp_rules_sapprojectsrv_links_links_updateentity_js : internalapp_rules_sapprojectsrv_links_links_updateentity_js,
+	internalapp_rules_sapprojectsrv_links_navtolinks_edit_js : internalapp_rules_sapprojectsrv_links_navtolinks_edit_js,
+	internalapp_rules_sapprojectsrv_upload_navtoupload_edit_js : internalapp_rules_sapprojectsrv_upload_navtoupload_edit_js,
+	internalapp_rules_sapprojectsrv_upload_upload_cancel_js : internalapp_rules_sapprojectsrv_upload_upload_cancel_js,
+	internalapp_rules_sapprojectsrv_upload_upload_createentity_js : internalapp_rules_sapprojectsrv_upload_upload_createentity_js,
+	internalapp_rules_sapprojectsrv_upload_upload_deleteconfirmation_js : internalapp_rules_sapprojectsrv_upload_upload_deleteconfirmation_js,
+	internalapp_rules_sapprojectsrv_upload_upload_updateentity_js : internalapp_rules_sapprojectsrv_upload_upload_updateentity_js,
 	internalapp_rules_service_initialize_js : internalapp_rules_service_initialize_js,
 	internalapp_services_sapprojectsrv_service : internalapp_services_sapprojectsrv_service,
 	internalapp_styles_styles_css : internalapp_styles_styles_css,
@@ -716,6 +826,477 @@ function Initialize(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_Cancel.js":
+/*!*******************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_Cancel.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Cancel)
+/* harmony export */ });
+function Cancel(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Docs')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/DraftDiscardEntity.action',
+      'Properties': {
+        'Target': {
+          'EntitySet': 'Docs'
+        },
+        'OnSuccess': '/internalApp/Actions/CloseModalPage_Cancel.action'
+      }
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/CloseModalPage_Cancel.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_CreateEntity.js":
+/*!*************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_CreateEntity.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CreateEntity)
+/* harmony export */ });
+function CreateEntity(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Docs')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/sapProjectSrv/Docs/Docs_CreateEntity.action',
+      'Properties': {
+        'OnSuccess': ''
+      }
+    }).then(result => {
+      let newEntity = JSON.parse(result.data);
+      return clientAPI.executeAction({
+        'Name': '/internalApp/Actions/DraftSaveEntity.action',
+        'Properties': {
+          'Target': {
+            'EntitySet': 'Docs',
+            'ReadLink': newEntity['@odata.readLink']
+          }
+        }
+      });
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Docs/Docs_CreateEntity.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_DeleteConfirmation.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_DeleteConfirmation.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ DeleteConfirmation)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function DeleteConfirmation(clientAPI) {
+  return clientAPI.executeAction('/internalApp/Actions/DeleteConfirmation.action').then(result => {
+    if (result.data) {
+      return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Docs/Docs_DeleteEntity.action').then(success => Promise.resolve(success), failure => Promise.reject('Delete entity failed ' + failure));
+    } else {
+      return Promise.reject('User Deferred');
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_UpdateEntity.js":
+/*!*************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Docs/Docs_UpdateEntity.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ UpdateEntity)
+/* harmony export */ });
+function UpdateEntity(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Docs')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/sapProjectSrv/Docs/Docs_UpdateEntity.action',
+      'Properties': {
+        'OnSuccess': ''
+      }
+    }).then(result => {
+      return clientAPI.executeAction({
+        'Name': '/internalApp/Actions/DraftSaveEntity.action',
+        'Properties': {
+          'Target': {
+            'EntitySet': 'Docs'
+          }
+        }
+      });
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Docs/Docs_UpdateEntity.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Docs/NavToDocs_Edit.js":
+/*!**********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Docs/NavToDocs_Edit.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavToEdit)
+/* harmony export */ });
+function NavToEdit(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Docs')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/DraftEditEntity.action',
+      'Properties': {
+        'Target': {
+          'EntitySet': 'Docs'
+        },
+        'OnSuccess': '/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Edit.action'
+      }
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Edit.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_Cancel.js":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_Cancel.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Cancel)
+/* harmony export */ });
+function Cancel(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Links')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/DraftDiscardEntity.action',
+      'Properties': {
+        'Target': {
+          'EntitySet': 'Links'
+        },
+        'OnSuccess': '/internalApp/Actions/CloseModalPage_Cancel.action'
+      }
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/CloseModalPage_Cancel.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_CreateEntity.js":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_CreateEntity.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CreateEntity)
+/* harmony export */ });
+function CreateEntity(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Links')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/sapProjectSrv/Links/Links_CreateEntity.action',
+      'Properties': {
+        'OnSuccess': ''
+      }
+    }).then(result => {
+      let newEntity = JSON.parse(result.data);
+      return clientAPI.executeAction({
+        'Name': '/internalApp/Actions/DraftSaveEntity.action',
+        'Properties': {
+          'Target': {
+            'EntitySet': 'Links',
+            'ReadLink': newEntity['@odata.readLink']
+          }
+        }
+      });
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Links/Links_CreateEntity.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_DeleteConfirmation.js":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_DeleteConfirmation.js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ DeleteConfirmation)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function DeleteConfirmation(clientAPI) {
+  return clientAPI.executeAction('/internalApp/Actions/DeleteConfirmation.action').then(result => {
+    if (result.data) {
+      return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Links/Links_DeleteEntity.action').then(success => Promise.resolve(success), failure => Promise.reject('Delete entity failed ' + failure));
+    } else {
+      return Promise.reject('User Deferred');
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_UpdateEntity.js":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Links/Links_UpdateEntity.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ UpdateEntity)
+/* harmony export */ });
+function UpdateEntity(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Links')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/sapProjectSrv/Links/Links_UpdateEntity.action',
+      'Properties': {
+        'OnSuccess': ''
+      }
+    }).then(result => {
+      return clientAPI.executeAction({
+        'Name': '/internalApp/Actions/DraftSaveEntity.action',
+        'Properties': {
+          'Target': {
+            'EntitySet': 'Links'
+          }
+        }
+      });
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Links/Links_UpdateEntity.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Links/NavToLinks_Edit.js":
+/*!************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Links/NavToLinks_Edit.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavToEdit)
+/* harmony export */ });
+function NavToEdit(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Links')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/DraftEditEntity.action',
+      'Properties': {
+        'Target': {
+          'EntitySet': 'Links'
+        },
+        'OnSuccess': '/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Edit.action'
+      }
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Edit.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/NavToUpload_Edit.js":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Upload/NavToUpload_Edit.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavToEdit)
+/* harmony export */ });
+function NavToEdit(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Upload')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/DraftEditEntity.action',
+      'Properties': {
+        'Target': {
+          'EntitySet': 'Upload'
+        },
+        'OnSuccess': '/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Edit.action'
+      }
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Edit.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_Cancel.js":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_Cancel.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Cancel)
+/* harmony export */ });
+function Cancel(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Upload')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/DraftDiscardEntity.action',
+      'Properties': {
+        'Target': {
+          'EntitySet': 'Upload'
+        },
+        'OnSuccess': '/internalApp/Actions/CloseModalPage_Cancel.action'
+      }
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/CloseModalPage_Cancel.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_CreateEntity.js":
+/*!*****************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_CreateEntity.js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CreateEntity)
+/* harmony export */ });
+function CreateEntity(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Upload')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/sapProjectSrv/Upload/Upload_CreateEntity.action',
+      'Properties': {
+        'OnSuccess': ''
+      }
+    }).then(result => {
+      let newEntity = JSON.parse(result.data);
+      return clientAPI.executeAction({
+        'Name': '/internalApp/Actions/DraftSaveEntity.action',
+        'Properties': {
+          'Target': {
+            'EntitySet': 'Upload',
+            'ReadLink': newEntity['@odata.readLink']
+          }
+        }
+      });
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Upload/Upload_CreateEntity.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_DeleteConfirmation.js":
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_DeleteConfirmation.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ DeleteConfirmation)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function DeleteConfirmation(clientAPI) {
+  return clientAPI.executeAction('/internalApp/Actions/DeleteConfirmation.action').then(result => {
+    if (result.data) {
+      return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Upload/Upload_DeleteEntity.action').then(success => Promise.resolve(success), failure => Promise.reject('Delete entity failed ' + failure));
+    } else {
+      return Promise.reject('User Deferred');
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_UpdateEntity.js":
+/*!*****************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Rules/sapProjectSrv/Upload/Upload_UpdateEntity.js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ UpdateEntity)
+/* harmony export */ });
+function UpdateEntity(clientAPI) {
+  if (clientAPI.getODataProvider('/internalApp/Services/sapProjectSrv.service').isDraftEnabled('Upload')) {
+    return clientAPI.executeAction({
+      'Name': '/internalApp/Actions/sapProjectSrv/Upload/Upload_UpdateEntity.action',
+      'Properties': {
+        'OnSuccess': ''
+      }
+    }).then(result => {
+      return clientAPI.executeAction({
+        'Name': '/internalApp/Actions/DraftSaveEntity.action',
+        'Properties': {
+          'Target': {
+            'EntitySet': 'Upload'
+          }
+        }
+      });
+    });
+  } else {
+    return clientAPI.executeAction('/internalApp/Actions/sapProjectSrv/Upload/Upload_UpdateEntity.action');
+  }
+}
+
+/***/ }),
+
 /***/ "./build.definitions/internalApp/Styles/Styles.css":
 /*!*********************************************************!*\
   !*** ./build.definitions/internalApp/Styles/Styles.css ***!
@@ -962,13 +1543,43 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
 
 /***/ }),
 
+/***/ "./build.definitions/internalApp/Pages/Main.page":
+/*!*******************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/Main.page ***!
+  \*******************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable","Sections":[{"Header":{"_Name":"SectionHeader_sapProjectSrv","AccessoryType":"None","UseTopPadding":true,"Caption":"sapProjectSrv","_Type":"SectionCommon.Type.Header"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Buttons":[{"OnPress":"/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_List.action","Alignment":"Center","Title":"Docs","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/internalApp/Actions/sapProjectSrv/Links/NavToLinks_List.action","Alignment":"Center","Title":"Links","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_List.action","Alignment":"Center","Title":"Upload","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"}],"_Name":"SectionButtonTable_sapProjectSrv","_Type":"Section.Type.ButtonTable"}]}],"_Name":"Main","_Type":"Page","ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/internalApp/Actions/Application/UserMenuPopover.action","_Type":"Control.Type.ActionBarItem"}],"_Name":"ActionBar1","Caption":"Main","PrefersLargeCaption":true,"_Type":"Control.Type.ActionBar"}}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Create.page":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Create.page ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ActionBar":{"Items":[{"OnPress":"/internalApp/Actions/CloseModalPage_Cancel.action","Position":"Left","SystemItem":"Cancel","_Type":"Control.Type.ActionBarItem"},{"OnPress":"/internalApp/Rules/sapProjectSrv/Docs/Docs_CreateEntity.js","Position":"Right","SystemItem":"Save","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Create_Docs_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Visible":true,"Controls":[{"Caption":"docsID","_Name":"docsID","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"internalUserId","_Name":"internalUserId","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"fileName","_Name":"fileName","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"filePath","_Name":"filePath","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"fileHash","_Name":"fileHash","_Type":"Control.Type.FormCell.SimpleProperty"},{"Mode":"Datetime","_Name":"uploadedAt","Caption":"uploadedAt","_Type":"Control.Type.FormCell.DatePicker"},{"_Name":"isDeleted","Caption":"isDeleted","Value":false,"_Type":"Control.Type.FormCell.Switch"}]}],"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"_Type":"Page","_Name":"Docs_Create"}
+
+/***/ }),
+
 /***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Detail.page":
 /*!*********************************************************************************!*\
   !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Detail.page ***!
   \*********************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"DesignTimeTarget":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Docs","QueryOptions":""},"ActionBar":{"Items":[],"Caption":"$(L,Docs_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"ObjectHeader":{"Tags":[],"DetailImage":"","HeadlineText":"{fileName}","Subhead":"{docsID}","BodyText":"","Footnote":"{filePath}","Description":"{internalUserId}","StatusText":"{fileHash}","StatusImage":"","SubstatusImage":"","SubstatusText":"{uploadedAt}"},"_Type":"Section.Type.ObjectHeader"},{"KeyAndValues":[{"KeyName":"docsID","Value":"{docsID}","_Type":"KeyValue.Type.Item"},{"KeyName":"internalUserId","Value":"{internalUserId}","_Type":"KeyValue.Type.Item"},{"KeyName":"fileName","Value":"{fileName}","_Type":"KeyValue.Type.Item"},{"KeyName":"filePath","Value":"{filePath}","_Type":"KeyValue.Type.Item"},{"KeyName":"fileHash","Value":"{fileHash}","_Type":"KeyValue.Type.Item"},{"KeyName":"uploadedAt","Value":"{uploadedAt}","_Type":"KeyValue.Type.Item"},{"KeyName":"isDeleted","Value":"{isDeleted}","_Type":"KeyValue.Type.Item"}],"Layout":{"NumberOfColumns":2},"MaxItemCount":1,"_Name":"SectionKeyValue0","_Type":"Section.Type.KeyValue"}],"DataSubscriptions":[],"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Docs_Detail"}
+module.exports = {"DesignTimeTarget":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Docs","QueryOptions":""},"ActionBar":{"Items":[{"OnPress":"/internalApp/Rules/sapProjectSrv/Docs/NavToDocs_Edit.js","Position":"Right","SystemItem":"Edit","_Type":"Control.Type.ActionBarItem"},{"OnPress":"/internalApp/Rules/sapProjectSrv/Docs/Docs_DeleteConfirmation.js","Position":"Right","SystemItem":"Trash","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Docs_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"ObjectHeader":{"Tags":[],"DetailImage":"","HeadlineText":"{fileName}","Subhead":"{docsID}","BodyText":"","Footnote":"{filePath}","Description":"{internalUserId}","StatusText":"{fileHash}","StatusImage":"","SubstatusImage":"","SubstatusText":"{uploadedAt}"},"_Type":"Section.Type.ObjectHeader"},{"KeyAndValues":[{"KeyName":"docsID","Value":"{docsID}","_Type":"KeyValue.Type.Item"},{"KeyName":"internalUserId","Value":"{internalUserId}","_Type":"KeyValue.Type.Item"},{"KeyName":"fileName","Value":"{fileName}","_Type":"KeyValue.Type.Item"},{"KeyName":"filePath","Value":"{filePath}","_Type":"KeyValue.Type.Item"},{"KeyName":"fileHash","Value":"{fileHash}","_Type":"KeyValue.Type.Item"},{"KeyName":"uploadedAt","Value":"{uploadedAt}","_Type":"KeyValue.Type.Item"},{"KeyName":"isDeleted","Value":"{isDeleted}","_Type":"KeyValue.Type.Item"}],"Layout":{"NumberOfColumns":2},"MaxItemCount":1,"_Name":"SectionKeyValue0","_Type":"Section.Type.KeyValue"}],"DataSubscriptions":[],"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Docs_Detail"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Edit.page":
+/*!*******************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Docs/Docs_Edit.page ***!
+  \*******************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"DesignTimeTarget":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Docs","QueryOptions":""},"ActionBar":{"Items":[{"Position":"Left","Caption":"Cancel","OnPress":"/internalApp/Rules/sapProjectSrv/Docs/Docs_Cancel.js","_Type":"Control.Type.ActionBarItem"},{"Position":"Right","SystemItem":"Save","OnPress":"/internalApp/Rules/sapProjectSrv/Docs/Docs_UpdateEntity.js","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Update_Docs_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Visible":true,"Controls":[{"Caption":"docsID","_Name":"docsID","Value":"{docsID}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"internalUserId","_Name":"internalUserId","Value":"{internalUserId}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"fileName","_Name":"fileName","Value":"{fileName}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"filePath","_Name":"filePath","Value":"{filePath}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"fileHash","_Name":"fileHash","Value":"{fileHash}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Mode":"Datetime","_Name":"uploadedAt","Value":"{uploadedAt}","Caption":"uploadedAt","_Type":"Control.Type.FormCell.DatePicker"},{"_Name":"isDeleted","Caption":"isDeleted","Value":"{isDeleted}","_Type":"Control.Type.FormCell.Switch"}]}],"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"_Type":"Page","_Name":"Docs_Edit"}
 
 /***/ }),
 
@@ -978,7 +1589,87 @@ module.exports = {"DesignTimeTarget":{"Service":"/internalApp/Services/sapProjec
   \*******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"ActionBar":{"Items":[],"Caption":"$(L,Docs)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"Header":{"UseTopPadding":false,"_Type":"SectionCommon.Type.Header"},"ObjectCell":{"AccessoryType":"DisclosureIndicator","Description":"{internalUserId}","AvatarStack":{"Avatars":[{"Image":""}],"ImageIsCircular":false},"Icons":[],"OnPress":"/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Detail.action","StatusImage":"","Title":"{fileName}","Footnote":"{filePath}","PreserveIconStackSpacing":false,"StatusText":"{fileHash}","Subhead":"{docsID}","SubstatusText":"{uploadedAt}","_Type":"ObjectTable.Type.ObjectCell"},"EmptySection":{"Caption":"No record found!"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."},"Target":{"EntitySet":"Docs","Service":"/internalApp/Services/sapProjectSrv.service","QueryOptions":""},"_Type":"Section.Type.ObjectTable"}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","FioriToolbar":{"_Name":"FioriToolbar","_Type":"Control.Type.FioriToolbar","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"LogoutToolbarItem","Title":"Logout","OnPress":"/internalApp/Actions/Application/Logout.action"}]},"_Name":"Docs_List"}
+module.exports = {"ActionBar":{"Items":[{"OnPress":"/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Create.action","Position":"Right","SystemItem":"Add","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Docs)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"Header":{"UseTopPadding":false,"_Type":"SectionCommon.Type.Header"},"ObjectCell":{"AccessoryType":"DisclosureIndicator","Description":"{internalUserId}","AvatarStack":{"Avatars":[{"Image":""}],"ImageIsCircular":false},"Icons":[],"OnPress":"/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Detail.action","StatusImage":"","Title":"{fileName}","Footnote":"{filePath}","PreserveIconStackSpacing":false,"StatusText":"{fileHash}","Subhead":"{docsID}","SubstatusText":"{uploadedAt}","_Type":"ObjectTable.Type.ObjectCell"},"EmptySection":{"Caption":"No record found!"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."},"Target":{"EntitySet":"Docs","Service":"/internalApp/Services/sapProjectSrv.service","QueryOptions":""},"_Type":"Section.Type.ObjectTable"}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Docs_List"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Create.page":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Create.page ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ActionBar":{"Items":[{"OnPress":"/internalApp/Actions/CloseModalPage_Cancel.action","Position":"Left","SystemItem":"Cancel","_Type":"Control.Type.ActionBarItem"},{"OnPress":"/internalApp/Rules/sapProjectSrv/Links/Links_CreateEntity.js","Position":"Right","SystemItem":"Save","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Create_Links_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Visible":true,"Controls":[{"Caption":"token","_Name":"token","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"recipient_email","_Name":"recipient_email","_Type":"Control.Type.FormCell.SimpleProperty"},{"Mode":"Datetime","_Name":"created_at","Caption":"created_at","_Type":"Control.Type.FormCell.DatePicker"},{"Mode":"Datetime","_Name":"expires_at","Caption":"expires_at","_Type":"Control.Type.FormCell.DatePicker"},{"Caption":"status","_Name":"status","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"access_count","KeyboardType":"Number","_Name":"access_count","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"max_access","KeyboardType":"Number","_Name":"max_access","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"password_hash","_Name":"password_hash","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"metadata","_Name":"metadata","_Type":"Control.Type.FormCell.SimpleProperty"}]}],"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"_Type":"Page","_Name":"Links_Create"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Detail.page":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Detail.page ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"DesignTimeTarget":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Links","QueryOptions":""},"ActionBar":{"Items":[{"OnPress":"/internalApp/Rules/sapProjectSrv/Links/NavToLinks_Edit.js","Position":"Right","SystemItem":"Edit","_Type":"Control.Type.ActionBarItem"},{"OnPress":"/internalApp/Rules/sapProjectSrv/Links/Links_DeleteConfirmation.js","Position":"Right","SystemItem":"Trash","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Links_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"ObjectHeader":{"Tags":[],"DetailImage":"","HeadlineText":"{ID}","Subhead":"{token}","BodyText":"","Footnote":"{created_at}","Description":"{recipient_email}","StatusText":"{expires_at}","StatusImage":"","SubstatusImage":"","SubstatusText":"{status}"},"_Type":"Section.Type.ObjectHeader"},{"KeyAndValues":[{"KeyName":"token","Value":"{token}","_Type":"KeyValue.Type.Item"},{"KeyName":"recipient_email","Value":"{recipient_email}","_Type":"KeyValue.Type.Item"},{"KeyName":"created_at","Value":"{created_at}","_Type":"KeyValue.Type.Item"},{"KeyName":"expires_at","Value":"{expires_at}","_Type":"KeyValue.Type.Item"},{"KeyName":"status","Value":"{status}","_Type":"KeyValue.Type.Item"},{"KeyName":"access_count","Value":"{access_count}","_Type":"KeyValue.Type.Item"},{"KeyName":"max_access","Value":"{max_access}","_Type":"KeyValue.Type.Item"},{"KeyName":"password_hash","Value":"{password_hash}","_Type":"KeyValue.Type.Item"},{"KeyName":"metadata","Value":"{metadata}","_Type":"KeyValue.Type.Item"}],"Layout":{"NumberOfColumns":2},"MaxItemCount":1,"_Name":"SectionKeyValue0","_Type":"Section.Type.KeyValue"}],"DataSubscriptions":[],"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Links_Detail"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Edit.page":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_Edit.page ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"DesignTimeTarget":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Links","QueryOptions":""},"ActionBar":{"Items":[{"Position":"Left","Caption":"Cancel","OnPress":"/internalApp/Rules/sapProjectSrv/Links/Links_Cancel.js","_Type":"Control.Type.ActionBarItem"},{"Position":"Right","SystemItem":"Save","OnPress":"/internalApp/Rules/sapProjectSrv/Links/Links_UpdateEntity.js","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Update_Links_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Visible":true,"Controls":[{"Caption":"token","_Name":"token","Value":"{token}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"recipient_email","_Name":"recipient_email","Value":"{recipient_email}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Mode":"Datetime","_Name":"created_at","Value":"{created_at}","Caption":"created_at","_Type":"Control.Type.FormCell.DatePicker"},{"Mode":"Datetime","_Name":"expires_at","Value":"{expires_at}","Caption":"expires_at","_Type":"Control.Type.FormCell.DatePicker"},{"Caption":"status","_Name":"status","Value":"{status}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"access_count","_Name":"access_count","Value":"{access_count}","KeyboardType":"Number","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"max_access","_Name":"max_access","Value":"{max_access}","KeyboardType":"Number","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"password_hash","_Name":"password_hash","Value":"{password_hash}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"metadata","_Name":"metadata","Value":"{metadata}","_Type":"Control.Type.FormCell.SimpleProperty"}]}],"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"_Type":"Page","_Name":"Links_Edit"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_List.page":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Links/Links_List.page ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ActionBar":{"Items":[{"OnPress":"/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Create.action","Position":"Right","SystemItem":"Add","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Links)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"Header":{"UseTopPadding":false,"_Type":"SectionCommon.Type.Header"},"ObjectCell":{"AccessoryType":"DisclosureIndicator","Description":"{recipient_email}","AvatarStack":{"Avatars":[{"Image":""}],"ImageIsCircular":false},"Icons":[],"OnPress":"/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Detail.action","StatusImage":"","Title":"{ID}","Footnote":"{created_at}","PreserveIconStackSpacing":false,"StatusText":"{expires_at}","Subhead":"{token}","SubstatusText":"{status}","_Type":"ObjectTable.Type.ObjectCell"},"EmptySection":{"Caption":"No record found!"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."},"Target":{"EntitySet":"Links","Service":"/internalApp/Services/sapProjectSrv.service","QueryOptions":""},"_Type":"Section.Type.ObjectTable"}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Links_List"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Create.page":
+/*!*************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Create.page ***!
+  \*************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ActionBar":{"Items":[{"OnPress":"/internalApp/Actions/CloseModalPage_Cancel.action","Position":"Left","SystemItem":"Cancel","_Type":"Control.Type.ActionBarItem"},{"OnPress":"/internalApp/Rules/sapProjectSrv/Upload/Upload_CreateEntity.js","Position":"Right","SystemItem":"Save","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Create_Upload_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Visible":true,"Controls":[{"Caption":"docsID","_Name":"docsID","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"internalUserId","_Name":"internalUserId","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"fileName","_Name":"fileName","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"filePath","_Name":"filePath","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"fileHash","_Name":"fileHash","_Type":"Control.Type.FormCell.SimpleProperty"},{"Mode":"Datetime","_Name":"uploadedAt","Caption":"uploadedAt","_Type":"Control.Type.FormCell.DatePicker"},{"_Name":"isDeleted","Caption":"isDeleted","Value":false,"_Type":"Control.Type.FormCell.Switch"}]}],"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"_Type":"Page","_Name":"Upload_Create"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Detail.page":
+/*!*************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Detail.page ***!
+  \*************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"DesignTimeTarget":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Upload","QueryOptions":""},"ActionBar":{"Items":[{"OnPress":"/internalApp/Rules/sapProjectSrv/Upload/NavToUpload_Edit.js","Position":"Right","SystemItem":"Edit","_Type":"Control.Type.ActionBarItem"},{"OnPress":"/internalApp/Rules/sapProjectSrv/Upload/Upload_DeleteConfirmation.js","Position":"Right","SystemItem":"Trash","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Upload_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"ObjectHeader":{"Tags":[],"DetailImage":"","HeadlineText":"{fileName}","Subhead":"{docsID}","BodyText":"","Footnote":"{filePath}","Description":"{internalUserId}","StatusText":"{fileHash}","StatusImage":"","SubstatusImage":"","SubstatusText":"{uploadedAt}"},"_Type":"Section.Type.ObjectHeader"},{"KeyAndValues":[{"KeyName":"docsID","Value":"{docsID}","_Type":"KeyValue.Type.Item"},{"KeyName":"internalUserId","Value":"{internalUserId}","_Type":"KeyValue.Type.Item"},{"KeyName":"fileName","Value":"{fileName}","_Type":"KeyValue.Type.Item"},{"KeyName":"filePath","Value":"{filePath}","_Type":"KeyValue.Type.Item"},{"KeyName":"fileHash","Value":"{fileHash}","_Type":"KeyValue.Type.Item"},{"KeyName":"uploadedAt","Value":"{uploadedAt}","_Type":"KeyValue.Type.Item"},{"KeyName":"isDeleted","Value":"{isDeleted}","_Type":"KeyValue.Type.Item"}],"Layout":{"NumberOfColumns":2},"MaxItemCount":1,"_Name":"SectionKeyValue0","_Type":"Section.Type.KeyValue"}],"DataSubscriptions":[],"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Upload_Detail"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Edit.page":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_Edit.page ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"DesignTimeTarget":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Upload","QueryOptions":""},"ActionBar":{"Items":[{"Position":"Left","Caption":"Cancel","OnPress":"/internalApp/Rules/sapProjectSrv/Upload/Upload_Cancel.js","_Type":"Control.Type.ActionBarItem"},{"Position":"Right","SystemItem":"Save","OnPress":"/internalApp/Rules/sapProjectSrv/Upload/Upload_UpdateEntity.js","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Update_Upload_Detail)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Visible":true,"Controls":[{"Caption":"docsID","_Name":"docsID","Value":"{docsID}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"internalUserId","_Name":"internalUserId","Value":"{internalUserId}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"fileName","_Name":"fileName","Value":"{fileName}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"filePath","_Name":"filePath","Value":"{filePath}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"fileHash","_Name":"fileHash","Value":"{fileHash}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Mode":"Datetime","_Name":"uploadedAt","Value":"{uploadedAt}","Caption":"uploadedAt","_Type":"Control.Type.FormCell.DatePicker"},{"_Name":"isDeleted","Caption":"isDeleted","Value":"{isDeleted}","_Type":"Control.Type.FormCell.Switch"}]}],"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"_Type":"Page","_Name":"Upload_Edit"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_List.page":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Pages/sapProjectSrv_Upload/Upload_List.page ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ActionBar":{"Items":[{"OnPress":"/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Create.action","Position":"Right","SystemItem":"Add","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Upload)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"Header":{"UseTopPadding":false,"_Type":"SectionCommon.Type.Header"},"ObjectCell":{"AccessoryType":"DisclosureIndicator","Description":"{internalUserId}","AvatarStack":{"Avatars":[{"Image":""}],"ImageIsCircular":false},"Icons":[],"OnPress":"/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Detail.action","StatusImage":"","Title":"{fileName}","Footnote":"{filePath}","PreserveIconStackSpacing":false,"StatusText":"{fileHash}","Subhead":"{docsID}","SubstatusText":"{uploadedAt}","_Type":"ObjectTable.Type.ObjectCell"},"EmptySection":{"Caption":"No record found!"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."},"Target":{"EntitySet":"Upload","Service":"/internalApp/Services/sapProjectSrv.service","QueryOptions":""},"_Type":"Section.Type.ObjectTable"}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Upload_List"}
 
 /***/ }),
 
@@ -988,7 +1679,7 @@ module.exports = {"ActionBar":{"Items":[],"Caption":"$(L,Docs)","_Type":"Control
   \*******************************************/
 /***/ ((module) => {
 
-module.exports = {"_Name":"internalApp","Version":"/internalApp/Globals/Application/AppDefinition_Version.global","MainPage":"/internalApp/Pages/sapProjectSrv_Docs/Docs_List.page","OnLaunch":"/internalApp/Rules/Service/Initialize.js","OnWillUpdate":"/internalApp/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/internalApp/Rules/Service/Initialize.js","Styles":"/internalApp/Styles/Styles.less","Localization":"/internalApp/i18n/i18n.properties","_SchemaVersion":"25.9","StyleSheets":{"Styles":{"css":"/internalApp/Styles/Styles.css","ios":"/internalApp/Styles/Styles.nss","android":"/internalApp/Styles/Styles.json"}}}
+module.exports = {"_Name":"internalApp","Version":"/internalApp/Globals/Application/AppDefinition_Version.global","MainPage":"/internalApp/Pages/Main.page","OnLaunch":"/internalApp/Rules/Service/Initialize.js","OnWillUpdate":"/internalApp/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/internalApp/Rules/Service/Initialize.js","Styles":"/internalApp/Styles/Styles.less","Localization":"/internalApp/i18n/i18n.properties","_SchemaVersion":"25.9","StyleSheets":{"Styles":{"css":"/internalApp/Styles/Styles.css","ios":"/internalApp/Styles/Styles.nss","android":"/internalApp/Styles/Styles.json"}}}
 
 /***/ }),
 
@@ -1142,6 +1833,86 @@ module.exports = {"_Type":"Action.Type.ClosePage"}
 
 /***/ }),
 
+/***/ "./build.definitions/internalApp/Actions/CreateEntityFailureMessage.action":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/CreateEntityFailureMessage.action ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Message":"Create entity failure - {#ActionResults:create/error}","Duration":7,"Animated":true,"_Type":"Action.Type.BannerMessage"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/CreateEntitySuccessMessage.action":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/CreateEntitySuccessMessage.action ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Animated":true,"Duration":2,"Message":"Entity created","IsIconHidden":true,"OnSuccess":"/internalApp/Actions/CloseModalPage_Complete.action","_Type":"Action.Type.ToastMessage"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/DeleteConfirmation.action":
+/*!*************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/DeleteConfirmation.action ***!
+  \*************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","Message":"Delete current entity?","Title":"Confirmation","OKCaption":"OK","CancelCaption":"Cancel","ActionResult":{"_Name":"DeleteConfirmation"}}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/DeleteEntityFailureMessage.action":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/DeleteEntityFailureMessage.action ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Message":"Delete entity failure - {#ActionResults:delete/error}","Duration":7,"Animated":true,"_Type":"Action.Type.BannerMessage"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/DeleteEntitySuccessMessage.action":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/DeleteEntitySuccessMessage.action ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Animated":true,"Duration":2,"Message":"Entity deleted","Icon":"","IsIconHidden":false,"NumberOfLines":2,"OnSuccess":"/internalApp/Actions/CloseModalPage_Complete.action","_Type":"Action.Type.ToastMessage"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/DraftDiscardEntity.action":
+/*!*************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/DraftDiscardEntity.action ***!
+  \*************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.DraftEnabled.Discard","Target":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Docs","ReadLink":"{@odata.readLink}"},"ShowActivityIndicator":true,"ActionResult":{"_Name":"update"},"OnSuccess":{"Name":"/internalApp/Actions/UpdateEntitySuccessMessage.action","Properties":{"Message":"Draft Discarded"}},"OnFailure":"/internalApp/Actions/UpdateEntityFailureMessage.action"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/DraftEditEntity.action":
+/*!**********************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/DraftEditEntity.action ***!
+  \**********************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.DraftEnabled.Edit","Target":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Docs","ReadLink":"{@odata.readLink}"},"ShowActivityIndicator":true,"ActionResult":{"_Name":"update"},"OnSuccess":{"Name":"/internalApp/Actions/UpdateEntitySuccessMessage.action","Properties":{"Message":"Draft Edit"}},"OnFailure":"/internalApp/Actions/UpdateEntityFailureMessage.action"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/DraftSaveEntity.action":
+/*!**********************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/DraftSaveEntity.action ***!
+  \**********************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.DraftEnabled.Save","Target":{"Service":"/internalApp/Services/sapProjectSrv.service","EntitySet":"Docs","ReadLink":"{@odata.readLink}"},"ShowActivityIndicator":true,"ActionResult":{"_Name":"update"},"OnSuccess":{"Name":"/internalApp/Actions/UpdateEntitySuccessMessage.action","Properties":{"Message":"Draft Saved"}},"OnFailure":"/internalApp/Actions/UpdateEntityFailureMessage.action"}
+
+/***/ }),
+
 /***/ "./build.definitions/internalApp/Actions/GenericBannerMessage.action":
 /*!***************************************************************************!*\
   !*** ./build.definitions/internalApp/Actions/GenericBannerMessage.action ***!
@@ -1222,6 +1993,66 @@ module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","Completio
 
 /***/ }),
 
+/***/ "./build.definitions/internalApp/Actions/UpdateEntityFailureMessage.action":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/UpdateEntityFailureMessage.action ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Message":"Update entity failure - {#ActionResults:update/error}","Duration":7,"Animated":true,"_Type":"Action.Type.BannerMessage"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/UpdateEntitySuccessMessage.action":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/UpdateEntitySuccessMessage.action ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Animated":true,"Duration":2,"Message":"Entity updated","Icon":"","IsIconHidden":false,"NumberOfLines":2,"OnSuccess":"/internalApp/Actions/CloseModalPage_Complete.action","_Type":"Action.Type.ToastMessage"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_CreateEntity.action":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_CreateEntity.action ***!
+  \*******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"CreateLinks":[],"OnFailure":"/internalApp/Actions/CreateEntityFailureMessage.action","OnSuccess":"/internalApp/Actions/CreateEntitySuccessMessage.action","Properties":{"docsID":"#Page:Docs_Create/#Control:docsID/#Value","internalUserId":"#Page:Docs_Create/#Control:internalUserId/#Value","fileName":"#Page:Docs_Create/#Control:fileName/#Value","filePath":"#Page:Docs_Create/#Control:filePath/#Value","fileHash":"#Page:Docs_Create/#Control:fileHash/#Value","uploadedAt":"#Page:Docs_Create/#Control:uploadedAt/#Value","isDeleted":"#Page:Docs_Create/#Control:isDeleted/#Value"},"Target":{"EntitySet":"Docs","Service":"/internalApp/Services/sapProjectSrv.service"},"ActionResult":{"_Name":"create"},"_Type":"Action.Type.ODataService.CreateEntity"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_DeleteEntity.action":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_DeleteEntity.action ***!
+  \*******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Target":{"EntitySet":"Docs","Service":"/internalApp/Services/sapProjectSrv.service","ReadLink":"{@odata.readLink}"},"OnSuccess":"/internalApp/Actions/DeleteEntitySuccessMessage.action","OnFailure":"/internalApp/Actions/DeleteEntityFailureMessage.action","ActionResult":{"_Name":"delete"},"_Type":"Action.Type.ODataService.DeleteEntity"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_UpdateEntity.action":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Docs/Docs_UpdateEntity.action ***!
+  \*******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","Target":{"EntitySet":"Docs","Service":"/internalApp/Services/sapProjectSrv.service","ReadLink":"{@odata.readLink}"},"Properties":{"docsID":"#Page:Docs_Edit/#Control:docsID/#Value","internalUserId":"#Page:Docs_Edit/#Control:internalUserId/#Value","fileName":"#Page:Docs_Edit/#Control:fileName/#Value","filePath":"#Page:Docs_Edit/#Control:filePath/#Value","fileHash":"#Page:Docs_Edit/#Control:fileHash/#Value","uploadedAt":"#Page:Docs_Edit/#Control:uploadedAt/#Value","isDeleted":"#Page:Docs_Edit/#Control:isDeleted/#Value"},"UpdateLinks":[],"ActionResult":{"_Name":"update"},"OnSuccess":"/internalApp/Actions/UpdateEntitySuccessMessage.action","OnFailure":"/internalApp/Actions/UpdateEntityFailureMessage.action"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Create.action":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Create.action ***!
+  \******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/internalApp/Pages/sapProjectSrv_Docs/Docs_Create.page","_Type":"Action.Type.Navigation"}
+
+/***/ }),
+
 /***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Detail.action":
 /*!******************************************************************************************!*\
   !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Detail.action ***!
@@ -1232,6 +2063,16 @@ module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/internalApp/Pa
 
 /***/ }),
 
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Edit.action":
+/*!****************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_Edit.action ***!
+  \****************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/internalApp/Pages/sapProjectSrv_Docs/Docs_Edit.page","_Type":"Action.Type.Navigation"}
+
+/***/ }),
+
 /***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_List.action":
 /*!****************************************************************************************!*\
   !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Docs/NavToDocs_List.action ***!
@@ -1239,6 +2080,76 @@ module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/internalApp/Pa
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/internalApp/Pages/sapProjectSrv_Docs/Docs_List.page"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_CreateEntity.action":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_CreateEntity.action ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"CreateLinks":[],"OnFailure":"/internalApp/Actions/CreateEntityFailureMessage.action","OnSuccess":"/internalApp/Actions/CreateEntitySuccessMessage.action","Properties":{"token":"#Page:Links_Create/#Control:token/#Value","recipient_email":"#Page:Links_Create/#Control:recipient_email/#Value","created_at":"#Page:Links_Create/#Control:created_at/#Value","expires_at":"#Page:Links_Create/#Control:expires_at/#Value","status":"#Page:Links_Create/#Control:status/#Value","access_count":"#Page:Links_Create/#Control:access_count/#Value","max_access":"#Page:Links_Create/#Control:max_access/#Value","password_hash":"#Page:Links_Create/#Control:password_hash/#Value","metadata":"#Page:Links_Create/#Control:metadata/#Value"},"Target":{"EntitySet":"Links","Service":"/internalApp/Services/sapProjectSrv.service"},"ActionResult":{"_Name":"create"},"_Type":"Action.Type.ODataService.CreateEntity"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_DeleteEntity.action":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_DeleteEntity.action ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Target":{"EntitySet":"Links","Service":"/internalApp/Services/sapProjectSrv.service","ReadLink":"{@odata.readLink}"},"OnSuccess":"/internalApp/Actions/DeleteEntitySuccessMessage.action","OnFailure":"/internalApp/Actions/DeleteEntityFailureMessage.action","ActionResult":{"_Name":"delete"},"_Type":"Action.Type.ODataService.DeleteEntity"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_UpdateEntity.action":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Links/Links_UpdateEntity.action ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","Target":{"EntitySet":"Links","Service":"/internalApp/Services/sapProjectSrv.service","ReadLink":"{@odata.readLink}"},"Properties":{"token":"#Page:Links_Edit/#Control:token/#Value","recipient_email":"#Page:Links_Edit/#Control:recipient_email/#Value","created_at":"#Page:Links_Edit/#Control:created_at/#Value","expires_at":"#Page:Links_Edit/#Control:expires_at/#Value","status":"#Page:Links_Edit/#Control:status/#Value","access_count":"#Page:Links_Edit/#Control:access_count/#Value","max_access":"#Page:Links_Edit/#Control:max_access/#Value","password_hash":"#Page:Links_Edit/#Control:password_hash/#Value","metadata":"#Page:Links_Edit/#Control:metadata/#Value"},"UpdateLinks":[],"ActionResult":{"_Name":"update"},"OnSuccess":"/internalApp/Actions/UpdateEntitySuccessMessage.action","OnFailure":"/internalApp/Actions/UpdateEntityFailureMessage.action"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Create.action":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Create.action ***!
+  \********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/internalApp/Pages/sapProjectSrv_Links/Links_Create.page","_Type":"Action.Type.Navigation"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Detail.action":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Detail.action ***!
+  \********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/internalApp/Pages/sapProjectSrv_Links/Links_Detail.page"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Edit.action":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_Edit.action ***!
+  \******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/internalApp/Pages/sapProjectSrv_Links/Links_Edit.page","_Type":"Action.Type.Navigation"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_List.action":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Links/NavToLinks_List.action ***!
+  \******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/internalApp/Pages/sapProjectSrv_Links/Links_List.page"}
 
 /***/ }),
 
@@ -1259,6 +2170,76 @@ module.exports = {"Service":"/internalApp/Services/sapProjectSrv.service","_Type
 /***/ ((module) => {
 
 module.exports = {"Message":"Failed to initialize application data service - {#ActionResults:init/error}","Duration":7,"Animated":true,"_Type":"Action.Type.BannerMessage"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Create.action":
+/*!**********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Create.action ***!
+  \**********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/internalApp/Pages/sapProjectSrv_Upload/Upload_Create.page","_Type":"Action.Type.Navigation"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Detail.action":
+/*!**********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Detail.action ***!
+  \**********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/internalApp/Pages/sapProjectSrv_Upload/Upload_Detail.page"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Edit.action":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_Edit.action ***!
+  \********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/internalApp/Pages/sapProjectSrv_Upload/Upload_Edit.page","_Type":"Action.Type.Navigation"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_List.action":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Upload/NavToUpload_List.action ***!
+  \********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/internalApp/Pages/sapProjectSrv_Upload/Upload_List.page"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_CreateEntity.action":
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_CreateEntity.action ***!
+  \***********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"CreateLinks":[],"OnFailure":"/internalApp/Actions/CreateEntityFailureMessage.action","OnSuccess":"/internalApp/Actions/CreateEntitySuccessMessage.action","Properties":{"docsID":"#Page:Upload_Create/#Control:docsID/#Value","internalUserId":"#Page:Upload_Create/#Control:internalUserId/#Value","fileName":"#Page:Upload_Create/#Control:fileName/#Value","filePath":"#Page:Upload_Create/#Control:filePath/#Value","fileHash":"#Page:Upload_Create/#Control:fileHash/#Value","uploadedAt":"#Page:Upload_Create/#Control:uploadedAt/#Value","isDeleted":"#Page:Upload_Create/#Control:isDeleted/#Value"},"Target":{"EntitySet":"Upload","Service":"/internalApp/Services/sapProjectSrv.service"},"ActionResult":{"_Name":"create"},"_Type":"Action.Type.ODataService.CreateEntity"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_DeleteEntity.action":
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_DeleteEntity.action ***!
+  \***********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Target":{"EntitySet":"Upload","Service":"/internalApp/Services/sapProjectSrv.service","ReadLink":"{@odata.readLink}"},"OnSuccess":"/internalApp/Actions/DeleteEntitySuccessMessage.action","OnFailure":"/internalApp/Actions/DeleteEntityFailureMessage.action","ActionResult":{"_Name":"delete"},"_Type":"Action.Type.ODataService.DeleteEntity"}
+
+/***/ }),
+
+/***/ "./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_UpdateEntity.action":
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/internalApp/Actions/sapProjectSrv/Upload/Upload_UpdateEntity.action ***!
+  \***********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","Target":{"EntitySet":"Upload","Service":"/internalApp/Services/sapProjectSrv.service","ReadLink":"{@odata.readLink}"},"Properties":{"docsID":"#Page:Upload_Edit/#Control:docsID/#Value","internalUserId":"#Page:Upload_Edit/#Control:internalUserId/#Value","fileName":"#Page:Upload_Edit/#Control:fileName/#Value","filePath":"#Page:Upload_Edit/#Control:filePath/#Value","fileHash":"#Page:Upload_Edit/#Control:fileHash/#Value","uploadedAt":"#Page:Upload_Edit/#Control:uploadedAt/#Value","isDeleted":"#Page:Upload_Edit/#Control:isDeleted/#Value"},"UpdateLinks":[],"ActionResult":{"_Name":"update"},"OnSuccess":"/internalApp/Actions/UpdateEntitySuccessMessage.action","OnFailure":"/internalApp/Actions/UpdateEntityFailureMessage.action"}
 
 /***/ }),
 

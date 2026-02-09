@@ -1,0 +1,100 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/internalApp/Services/sapProjectSrv.service",
+		"EntitySet": "Links",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"Caption": "Cancel",
+				"OnPress": "/internalApp/Rules/sapProjectSrv/Links/Links_Cancel.js",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/internalApp/Rules/sapProjectSrv/Links/Links_UpdateEntity.js",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_Links_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "token",
+							"_Name": "token",
+							"Value": "{token}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "recipient_email",
+							"_Name": "recipient_email",
+							"Value": "{recipient_email}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "created_at",
+							"Value": "{created_at}",
+							"Caption": "created_at",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "expires_at",
+							"Value": "{expires_at}",
+							"Caption": "expires_at",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "status",
+							"_Name": "status",
+							"Value": "{status}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "access_count",
+							"_Name": "access_count",
+							"Value": "{access_count}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "max_access",
+							"_Name": "max_access",
+							"Value": "{max_access}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "password_hash",
+							"_Name": "password_hash",
+							"Value": "{password_hash}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "metadata",
+							"_Name": "metadata",
+							"Value": "{metadata}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Links_Edit"
+}
