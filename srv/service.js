@@ -51,8 +51,23 @@ module.exports = cds.service.impl(async function() {
     
     // Generate file hash if content is provided
     if (data.content) {
-      data.fileHash = generateFileHash(data.content);
-      data.fileSize = Buffer.from(data.content).length;
+      // Content might be a stream or buffer, read it if needed
+      let contentBuffer = data.content;
+      
+      // If it's a stream, we need to read it
+      if (contentBuffer && typeof contentBuffer.pipe === 'function') {
+        const chunks = [];
+        for await (const chunk of contentBuffer) {
+          chunks.push(chunk);
+        }
+        contentBuffer = Buffer.concat(chunks);
+        data.content = contentBuffer; // Replace stream with buffer
+      } else if (typeof contentBuffer === 'string') {
+        contentBuffer = Buffer.from(contentBuffer, 'base64');
+      }
+      
+      data.fileHash = generateFileHash(contentBuffer);
+      data.fileSize = contentBuffer.length;
     }
     
     // Set isDeleted to false by default
@@ -85,18 +100,30 @@ module.exports = cds.service.impl(async function() {
 
     const db = await cds.connect.to('db');
     
+    // Handle content - might be stream or buffer
+    let contentBuffer = content;
+    if (contentBuffer && typeof contentBuffer.pipe === 'function') {
+      const chunks = [];
+      for await (const chunk of contentBuffer) {
+        chunks.push(chunk);
+      }
+      contentBuffer = Buffer.concat(chunks);
+    } else if (typeof contentBuffer === 'string') {
+      contentBuffer = Buffer.from(contentBuffer, 'base64');
+    }
+    
     // Generate document metadata
     const docsID = generateDocId();
-    const fileHash = generateFileHash(content);
+    const fileHash = generateFileHash(contentBuffer);
     const uploadedAt = getCurrentTimestamp();
-    const fileSize = Buffer.from(content).length;
+    const fileSize = contentBuffer.length;
     
     // Create document record
     const doc = {
       docsID: docsID,
       fileName: fileName,
       mediaType: mediaType,
-      content: content,
+      content: contentBuffer,
       fileHash: fileHash,
       uploadedAt: uploadedAt,
       fileSize: fileSize,
