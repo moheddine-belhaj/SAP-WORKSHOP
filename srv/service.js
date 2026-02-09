@@ -6,7 +6,24 @@ module.exports = cds.service.impl(async function() {
 
   // Filter out soft-deleted documents
   this.before('READ', 'Docs', async (req) => {
-    req.query.where({ isDeleted: false });
+    // Append isDeleted=false filter using CQN where condition
+    const existingWhere = req.query.SELECT?.where;
+    if (existingWhere) {
+      // Wrap existing where and add AND condition
+      req.query.SELECT.where = ['(', ...existingWhere, ')', 'and', { ref: ['isDeleted'] }, '=', { val: false }];
+    } else {
+      req.query.where({ isDeleted: false });
+    }
+  });
+
+  // Ensure docsID is provided or generated before creating Docs
+  this.before('CREATE', 'Docs', async (req) => {
+    if (!req.data.docsID) {
+      req.data.docsID = generateDocId();
+    }
+    if (req.data.isDeleted === undefined) {
+      req.data.isDeleted = false;
+    }
   });
 
   // Handle READ for Docs
